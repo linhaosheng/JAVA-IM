@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="@drawable/skinpic_blue"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0.0dip"
+            android:background="@drawable/title_btn_l_selector"
+            android:src="@drawable/title_btn_back"/>
+
+        <TextView
+            android:id="@+id/ivTitleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:text="个人基本信息"
+            android:textStyle="bold"
+            android:textSize="28.0sp"
+            />
+        <Button
+            android:id="@+id/edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_btn_r_selector"
+            android:text="编辑"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/finsh_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_btn_r_selector"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+        </LinearLayout>
+
+<ScrollView
+    android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="0.0px"
+    android:layout_weight="1.0"
+    android:background="@color/white3"
+    android:scrollbars="none"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="12.0dip"
+        android:isScrollContainer="true">
+
+        <include layout="@layout/user_info_top"/>
+        <include layout="@layout/user_info_detail" />
+        <include layout="@layout/user_info_edit" />
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

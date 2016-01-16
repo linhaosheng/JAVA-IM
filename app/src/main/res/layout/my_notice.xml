@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="@drawable/skinpic_blue"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_btn_l_selector"
+            android:padding="0.0dip"
+            android:src="@drawable/title_btn_back"/>
+
+        <TextView
+            android:id="@+id/ivTitleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/white3"
+            android:text="我的消息"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"
+            />
+        <Button
+            android:id="@+id/edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:background="@drawable/title_btn_r_selector"
+            android:gravity="center"
+            android:text="编辑"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+             />
+
+        </LinearLayout>
+    <!--- 系统消息-->
+   <ListView
+        android:id="@+id/my_notice_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#000000"
+        android:divider="#20ffff"
+        android:dividerHeight="1dp">
+        </ListView>
+
+
+
+</LinearLayout>

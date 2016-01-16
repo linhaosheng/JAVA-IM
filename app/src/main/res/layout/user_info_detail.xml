@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_info_detail"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6.0dip"
+    android:layout_marginRight="6.0dip" 
+    android:background="@drawable/leba_shape_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/change_comment1"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5.0dip"
+            android:text="姓名"
+            android:textColor="@color/gray1"
+            android:textSize="18.0sp" />
+
+       <TextView
+            android:id="@+id/firstname"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/gray1"
+            android:textSize="18.0sp" />  
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5.0dip"
+            android:text="昵称"
+            android:textColor="@color/gray1"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:textColor="@color/gray1"
+            android:textSize="18.0sp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5.0dip"
+            android:text="公司"
+            android:textColor="@color/gray1"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/orgname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:textColor="@color/gray1"
+            android:textSize="18.0sp" /> 
+    </LinearLayout>
+     <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5.0dip"
+            android:text="院系"
+            android:textColor="@color/gray1"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/orgunit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:textColor="@color/gray1"
+            android:textSize="18.0sp" /> 
+    </LinearLayout>
+	<View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/shape_line" />
+
+   <LinearLayout
+        android:id="@+id/change_comment2"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5.0dip"
+            android:text="手机号"
+            android:textColor="@color/gray1"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/gray1"
+            android:textSize="18.0sp"/> 
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/shape_line" />
+
+   <LinearLayout
+        android:id="@+id/change_comment3"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5.0dip"
+            android:text="邮箱"
+            android:textColor="@color/gray1"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/emailhome"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/gray1"
+            android:textSize="18.0sp"/> 
+    </LinearLayout>
+</LinearLayout>

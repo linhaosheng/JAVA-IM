@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/friend_info_sign"
+        android:orientation="horizontal"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/userimage"
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:layout_centerVertical="true"
+                android:layout_gravity="top"
+                android:layout_marginLeft="6.0dip"
+                android:background="@drawable/face_bg"
+                android:gravity="center"
+                android:padding="2.0dip"
+                android:src="@drawable/h001" />
+
+            <ImageView
+                android:id="@+id/faceIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/face"
+                android:layout_alignRight="@id/face"
+                android:layout_margin="2.0dip"
+                android:src="@drawable/friend_info_avatar_upload" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="12.0dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/introduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="个性签名"
+                    android:textColor="#ff7bc3f6"
+                    android:textSize="16.0sp"/> 
+                  
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/disc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="5"
+                android:text="编写我的个性签名"
+                android:textColor="#ff343434"
+                android:textColorHint="#ffb1b1b1"
+                android:textSize="14.0sp" />
+             <EditText 
+	            android:id="@+id/e_disc"
+	            android:layout_width="fill_parent"
+                android:layout_height="40dip"
+	            android:background="@anim/edit_text"
+	            android:textSize="14.0sp" 
+	            android:ellipsize="end"
+	            android:singleLine="true" 
+	            android:visibility="gone"
+	            android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

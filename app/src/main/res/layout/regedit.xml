@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white3">
+    <include android:id="@+id/item_header"
+        layout="@layout/item_header"/>
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/regedit_ed_username"
+            android:layout_width="match_parent"
+            android:layout_height="42dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="20dip"
+            android:layout_marginRight="5dip"
+            android:hint="请输入用户名"
+            android:background="@anim/edit_text"/>
+
+        <EditText
+            android:id="@+id/regedit_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="42dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="100dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:hint="请输入密码"
+            android:background="@anim/edit_text"
+            android:password="true"
+            />
+
+        <EditText
+            android:id="@+id/regedit_et_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="42dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="188dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:hint="请输入确认密码"
+            android:background="@anim/edit_text"
+            android:password="true"
+
+            />
+
+        <Button
+            android:id="@+id/regedit_create"
+            android:layout_width="match_parent"
+            android:layout_height="42dip"
+            android:text="确认"
+            android:layout_below="@+id/regedit_et_confirm_password"
+            android:layout_marginTop="80dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@color/blue"/>
+        </RelativeLayout>
+
+</LinearLayout>

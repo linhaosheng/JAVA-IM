@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+      android:id="@+id/menu_return_main_page"
+      android:icon="@drawable/icon"
+      android:title="回到首页"></item>
+
+    <item
+        android:id="@+id/menu_relogin"
+        android:icon="@drawable/icon"
+        android:title="重新登录"></item>
+
+    <item android:id="@+id/menu_help"
+        android:icon="@drawable/icon"
+        android:title="软件帮助"></item>
+
+    <item
+        android:id="@+id/menu_exit"
+        android:icon="@drawable/icon"
+        android:title="退出"></item>
+</menu>

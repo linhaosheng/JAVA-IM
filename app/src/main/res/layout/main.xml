@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/line"
+    android:background="@color/white3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="center_vertical"
+        android:background="@drawable/skinpic_blue"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/userimage"
+            android:scaleType="fitCenter"
+            android:layout_width="42.0dip"
+            android:layout_height="42.0dp"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="2.0dip"
+            android:layout_marginRight="8.0dip"
+            android:background="@drawable/face_self_bg"
+            android:clickable="true"
+            android:padding="4.0dip"
+            android:src="@drawable/h001"
+           />
+
+        <ImageView
+            android:id="@+id/iv_states"
+            android:layout_width="25.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+             android:src="@drawable/status_online"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+        </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dip"
+        android:columnWidth="70dip"
+        android:gravity="center"
+        android:horizontalSpacing="10sp"
+        android:listSelector="@color/white3"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"></GridView>
+
+</LinearLayout>

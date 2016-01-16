@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.activity" >
+    <!-- 访问Internet -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--- 访问网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+ <!-- android:allowBackup="true"
+   android:icon="@drawable/im"
+        android:label="@string/app_name"
+  -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/im"
+        android:label="@string/app_name"
+        android:name=".IMApplication"
+        android:theme="@android:style/Theme.NoTitleBar"
+        >
+        <activity
+            android:name="com.example.administrator.activity.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 用户向导 -->
+        <activity android:name=".GuideViewActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <!-- 主页面 -->
+        <activity android:name=".MainActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <!-- 用户信息-->
+        <activity android:name=".UserInfoActivity"  android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <!--用户注册 -->
+        <activity android:name=".RegisterActivity"  android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <!--修改密码 -->
+        <activity android:name=".ChangePasswordActivity"  android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <!-- 聊天界面-->
+        <activity android:name=".ChatActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <!-- 聊天记录-->
+        <activity android:name=".ChatHistoryActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <!-- 消息通知-->
+        <activity android:name=".MyNoticeActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <!-- 通信录-->
+        <activity android:name=".PhoneBookActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <!--文件传输 -->
+        <activity android:name=".PersionFileActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <!-- 单点登录-->
+        <activity android:name=".SSOActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+         <!--朋友信息 -->
+        <activity android:name=".FriendInfoActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <!-- 聊天主界面-->
+        <activity android:name=".ContacterMainActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+       <!-- 系统消息通知界面-->
+        <activity android:name=".SystemNoticeDetailActivity"  android:launchMode="standard" android:screenOrientation="portrait"></activity>
+       <!--设置界面-->
+        <activity android:name=".SetingActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <!-- 聊天服务-->
+       <service android:name="com.example.administrator.service.IMChatService"/>
+        <!-- 联系人服务-->
+        <service android:name="com.example.administrator.service.IMContactService"/>
+        <!--系统服务-->
+        <service android:name="com.example.administrator.service.IMSystemMsgService"/>
+        <!--重连接-->
+        <service android:name="com.example.administrator.service.ReConnectService"/>
+    </application>
+
+</manifest>

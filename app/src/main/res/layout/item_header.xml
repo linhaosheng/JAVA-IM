@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50.0dip"
+    android:id="@+id/top_navigate"
+    android:background="@drawable/skinpic_blue">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="65dip"
+        android:layout_marginTop="30dip">
+        
+        <TextView
+            android:id="@+id/NavigateBack"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:textSize="16sp"
+            android:textColor="#ffffffff"
+           android:layout_gravity="center"
+            android:paddingLeft="4px"
+            android:clickable="true"
+            android:text="欢迎使用JAVA-IM"/>
+        </LinearLayout>
+    
+     <TextView
+         android:id="@+id/NavigateTitle"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#ffffffff"
+         android:text=""
+         android:layout_centerInParent="true"
+         android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"></LinearLayout>
+</RelativeLayout>

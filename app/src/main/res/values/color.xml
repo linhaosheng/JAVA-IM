@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gold">#b89766</color>
+    <color name="white3">#EEEEFF</color>
+    <color name="cyan">#0fffff</color>
+    <color name="blue">#099fff</color>
+    <color name="white4">#FFEEEE</color>
+    <color name="gray">#FF666666</color>
+    <color name="chat_list_header_text">#ff666666</color>
+    <color name="darkGray">#4B4B4B</color>
+    <color name="gray_blue">#DDDDFF</color>
+    <color name="window_bg">#fff0f3f6</color>
+    <color type="color" name="chat_background">@color/window_bg</color>
+    <color name="red">#FFFF1318</color>
+    <color name="p_bg">#fff1f3f5</color>
+    <color name="gray1">#ffb1b1b1</color>
+    <color name="base_color_text_black">#3e3e39</color>
+    <color name="msg_emote_divider">#ffa1a1a1</color>
+    <color name="base_color_text_gray">#9fa0a0</color>
+    <color name="trans">#000000</color>
+    <color name="chat_text">#ff3333</color>
+    <color name="title_bg">#ff54acea</color>
+    <color name="chat_history_time_text">#ff999999</color>
+    <color name="chat_history_msg_text">#ff545454</color>
+</resources>

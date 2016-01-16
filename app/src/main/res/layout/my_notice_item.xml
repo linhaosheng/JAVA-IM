@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/new_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="8dip"
+        android:layout_weight="0"
+        android:src="@drawable/icon_recent_sysmsg"/>
+
+    <FrameLayout
+       android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/sc_messagebtn">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginLeft="5dip">
+
+                <TextView
+                    android:id="@+id/new_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="26dp"
+                    android:text="2015-09-28 12:19"/>
+
+                <TextView
+                    android:id="@+id/new_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="张三"
+                    android:textColor="@color/black"/>
+                </RelativeLayout>
+
+            <TextView
+                android:id="@+id/new_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="hello"
+                android:textSize="20dip"
+                android:textColor="@color/black"/>
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/paopao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sc_message_box_bubble"
+            android:visibility="gone"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="10dip"/>
+        </FrameLayout>
+</LinearLayout>

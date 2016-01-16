@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--  头部  (head) start-->
+    <LinearLayout
+        style="@style/head_style"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/title_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_btn_l_selector"
+                android:padding="0.0dip"
+                android:src="@drawable/title_btn_back"/>
+
+            <TextView
+                android:id="@+id/ivTitleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="系统通知"
+                android:textSize="25dip"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/edit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:background="@drawable/title_btn_r_selector"
+                android:gravity="center"
+                android:textSize="16.0sp"
+                android:text="上传"
+                android:textColor="@color/white"
+                android:visibility="invisible"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    <!--  头部 (head)end-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/icon_recent_sysmsg"/>
+
+        <TextView
+            android:id="@+id/notice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:singleLine="true"
+            android:text="新消息"/>
+        </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/listViewHistory"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       android:layout_gravity="center_horizontal"
+        android:divider="@color/chat_background"
+        android:layout_weight="1"
+        android:dividerHeight="0.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip">
+
+                <TextView
+                    android:id="@+id/notice_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="有新版本要升级"
+                    android:textSize="19dip"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/status_bar" android:background="#99000000" android:paddingLeft="9.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="28.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@+id/status_bar_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+    </LinearLayout>
+
+  <Button
+      android:id="@+id/delHistory"
+      android:layout_width="fill_parent"
+      android:layout_height="45.0dip"
+      android:text="删除"
+      android:layout_marginLeft="10dip"
+      android:layout_marginRight="10dip"
+      android:background="@color/red"
+      android:layout_marginBottom="20dip"/>
+</LinearLayout>
